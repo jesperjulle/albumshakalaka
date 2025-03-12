@@ -44,6 +44,8 @@ fetch('src/albums.json')
   })
   .catch((error) => console.error('Fejl ved hentning af data:', error));
 
+//tilføjer min eventlistener. så hvis et element med id "footer" bliver "click"
+//så bliver p i den til noget andet.
 document.getElementById('footer').addEventListener('click', function () {
   this.querySelector('p').textContent = 'To be continued';
 });
