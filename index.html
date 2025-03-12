@@ -6,12 +6,15 @@
     <title>Album Side</title>
   </head>
   <body class="bg-green-500">
+    <!--Laver header med titel-->
     <header
       class="bg-yellow-500 text-black p-4 border-2 border-black font-mono text-5xl"
     >
       <h1>Albumshakalaka</h1>
     </header>
+    <!--div til at have left sidebar, main, right sidebar. derfor bruger jeg flex i class..-->
     <div class="flex">
+      <!--left sidebar.-->
       <aside class="w-1/5 bg-purple-700 text-yellow-500 p-4">
         <p class="text-4xl">Sidebardumtsh</p>
         <ul>
@@ -29,7 +32,7 @@
           </li>
         </ul>
       </aside>
-
+      <!--main, altså midten..-->
       <main class="w-3/5 p-4">
         <!-- Opretter tabel -->
         <table
@@ -48,7 +51,7 @@
           <tbody id="album-table-body" class="divide-y divide-red-300"></tbody>
         </table>
       </main>
-
+      <!--right sidebar-->
       <aside class="w-1/5 bg-blue-800 text-red-500 p-4">
         <p>Allrightsidebar</p>
         <img
@@ -58,6 +61,7 @@
         />
       </aside>
     </div>
+    <!--footeren med id, så den kan findes a eventlister-->
     <footer
       id="footer"
       class="bg-blue-900 text-white p-4 text-right font-mono text-lg"
