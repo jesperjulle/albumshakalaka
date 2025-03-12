@@ -10,5 +10,5 @@ Bygget med HTML, Tailwind CSS, and JavaScript.
 
 ## How to Run
 
-1. Clone this repository.
-2. Open `index.html` in a browser.
+1. Clone repository.
+2. Åpen `index.html` i en browser.
