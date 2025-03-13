@@ -3,4 +3,4 @@
     <td>${e.artist}</td>
     <td>${e.year}</td>
     <td>${e.rating}</td>
-  `,r.appendChild(i)}fetch("src/albums.json").then(e=>e.json()).then(e=>{let n=[];for(let r=0;r<e.length;r++){const i=new s(e[r].artistName,e[r].albumName,e[r].productionYear,e[r].rating);n.push(i)}n.forEach(function(r){d(r,"album-table-body")})}).catch(e=>console.error("Fejl ved hentning af data:",e));document.getElementById("footer").addEventListener("click",function(){this.querySelector("p").textContent="To be continued"});
+  `,r.appendChild(i)}fetch("./albums.json").then(e=>e.json()).then(e=>{let n=[];for(let r=0;r<e.length;r++){const i=new s(e[r].artistName,e[r].albumName,e[r].productionYear,e[r].rating);n.push(i)}n.forEach(function(r){d(r,"album-table-body")})}).catch(e=>console.error("Fejl ved hentning af data:",e));document.getElementById("footer").addEventListener("click",function(){this.querySelector("p").textContent="To be continued"});
