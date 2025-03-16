@@ -1,4 +1,5 @@
 import './style.css';
+
 //-Definerer værdier fra json filen jeg vil have ind-->
 // Constructor function for Album objekter
 function Album(artist, album, year, rating) {
@@ -23,7 +24,7 @@ function addRowToTable(album, tableBodyId) {
 }
 
 // Henter JSON-data og viser det i tabellen
-fetch('src/albums.json')
+fetch('./albums.json')
   .then((response) => response.json())
   .then((albums) => {
     let albumObjects = [];

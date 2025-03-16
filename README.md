@@ -11,4 +11,7 @@ Bygget med HTML, Tailwind CSS, and JavaScript.
 ## How to Run
 
 1. Clone repository.
-2. Åpen `index.html` i en browser.
+2. `npm install`
+3. `npm run dev`
+
+Eller på https://jesperjulle.github.io/albumshakalaka/

@@ -4,42 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Album Side</title>
-    <script type="module" crossorigin src="/assets/index-BPx3DDgD.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-qiZJq9hf.css">
+
+    <script type="module" crossorigin src="/albumshakalaka/assets/index-HxD-5E3O.js"></script>
+    <link rel="stylesheet" crossorigin href="/albumshakalaka/assets/index-D3O-41EW.css">
   </head>
-  <body class="bg-green-500">
+  <body class="bg-green-500 flex flex-col min-h-screen">
     <!--Laver header med titel-->
     <header
-      class="bg-yellow-500 text-black p-4 border-2 border-black font-mono text-5xl"
+      class="sticky top-0 z-10 bg-yellow-500 text-black p-2 sm:p-4 border-2 border-black font-mono text-3xl sm:text-5xl break-words"
     >
       <h1>Albumshakalaka</h1>
     </header>
     <!--div til at have left sidebar, main, right sidebar. derfor bruger jeg flex i class..-->
-    <div class="flex">
-      <!--left sidebar.-->
-      <aside class="w-1/5 bg-purple-700 text-yellow-500 p-4">
-        <p class="">Sidebardumtcsh</p>
-        <ul>
-          <li>
-            <a href="#" class="text-fuchsia-500 underline text-sm">link 1</a>
-          </li>
-          <li>
-            <a href="#" class="text-fuchsia-500 underline text-sm">link 2</a>
-          </li>
-          <li>
-            <a href="#" class="text-fuchsia-500 underline text-sm">link 3</a>
-          </li>
-          <li>
-            <a href="#" class="text-fuchsia-500 underline text-sm">link 4</a>
-          </li>
-        </ul>
-      </aside>
+    <div class="flex-1">
       <!--main, altså midten..-->
-      <main class="w-3/5 p-4">
+      <div class='overflow-auto'>
         <!-- Opretter tabel -->
         <table
           id="album-table"
-          class="w-full text-left text-red-500 border-2 border-yellow-500"
+          class="w-full text-left text-red-500 border-2 border-yellow-500 "
         >
           <thead class="bg-blue-500 text-red-500 font-mono">
             <tr>
@@ -52,16 +35,17 @@
           <!-- tbody fyldes dynamisk via id -->
           <tbody id="album-table-body" class="divide-y divide-red-300"></tbody>
         </table>
-      </main>
+
+      </div>
+
+   
       <!--right sidebar-->
-      <aside class="w-1/5 bg-blue-800 text-red-500 p-4">
-        <p>Allrightsidebar</p>
-        <img
-          src="/assets/pngwing.com-6ykNHYr1.png"
-          alt="tilfældigt billede"
-          class="w-full"
-        />
-      </aside>
+      <div
+        class="w-full bg-blue-800 text-red-500 p-4"
+      >
+        <p class="break-words text-center">music</p>
+        <img src="/albumshakalaka/pngwing.com.png" alt="tilfældigt billede" class="w-full" />
+  
     </div>
     <!--footeren med id, så den kan findes a eventlistenr-->
     <footer
@@ -72,5 +56,6 @@
     </footer>
 
     <!-- Funktionalitet indlæses fra main.js -->
+    <!--asd-->
   </body>
 </html>
