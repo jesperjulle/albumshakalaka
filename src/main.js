@@ -1,5 +1,3 @@
-import './style.css';
-
 //-Definerer værdier fra json filen jeg vil have ind-->
 // Constructor function for Album objekter
 function Album(artist, album, year, rating) {
